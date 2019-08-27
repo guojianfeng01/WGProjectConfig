@@ -141,7 +141,7 @@ public extension UILabel{
     /// - Returns: UILabel
     static func createLineLabel(withTitle title: String, titleFont font: UIFont, titleColor color: UIColor?, textAlignment: NSTextAlignment) -> UILabel? {
         let la = UILabel()
-        let attribtDic = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.styleSingle.rawValue]
+        let attribtDic = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue]
         let attribtStr = NSMutableAttributedString(string: title, attributes: attribtDic)
         la.attributedText = attribtStr
         la.textAlignment = textAlignment

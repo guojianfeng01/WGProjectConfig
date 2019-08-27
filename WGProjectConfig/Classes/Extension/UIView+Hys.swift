@@ -151,12 +151,12 @@ extension CGRect: ExpressibleByStringLiteral {
         if value[value.startIndex] != "{" {
             let comp = value.components(separatedBy: ",")
             if comp.count == 4 {
-                rect = CGRectFromString("{{\(comp[0]),\(comp[1])}, {\(comp[2]), \(comp[3])}}")
+                rect = NSCoder.cgRect(for: "{{\(comp[0]),\(comp[1])}, {\(comp[2]), \(comp[3])}}")
             } else {
                 rect = CGRect.zero
             }
         } else {
-            rect = CGRectFromString(value)
+            rect = NSCoder.cgRect(for: value)
         }
         
         self.size = rect.size
@@ -182,9 +182,9 @@ extension CGPoint: ExpressibleByStringLiteral {
         
         let point: CGPoint
         if value[value.startIndex] != "{" {
-            point = CGPointFromString("{\(value)}")
+            point = NSCoder.cgPoint(for: "{\(value)}")
         } else {
-            point = CGPointFromString(value)
+            point = NSCoder.cgPoint(for: value)
         }
         self.x = point.x
         self.y = point.y
@@ -375,7 +375,7 @@ public extension UIView{
         border.path = UIBezierPath(rect: bounds).cgPath
         border.frame = bounds
         border.lineWidth = lineWidth
-        border.lineCap = CAShapeLayerLineCap(string: "square") as String
+        border.lineCap = CAShapeLayerLineCap(rawValue: "square")
         //设置线宽和线间距
         border.lineDashPattern = [4, 5]
         layer.addSublayer(border)
@@ -390,7 +390,7 @@ public extension UIView{
         border.path = UIBezierPath(rect: bounds).cgPath
         border.frame = bounds
         border.lineWidth = lineWidth
-        border.lineJoin = CAShapeLayerLineJoin(string: "round") as String
+        border.lineJoin = CAShapeLayerLineJoin.round
         //设置线宽和线间距
         border.lineDashPattern = [4, 5]
         layer.addSublayer(border)
