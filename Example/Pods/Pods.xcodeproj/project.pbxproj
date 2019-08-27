@@ -30,17 +30,17 @@
 		AFF7C61E023B166EFA7204561A9BF9E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		B25D795BDC4F426BC01EFC911F368B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = EA718A72E676291836EBB46B85242155 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		C165E22A2314E5F700F9BDBF /* UILabel+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E21F2314E5F400F9BDBF /* UILabel+Hys.swift */; };
-		C165E22B2314E5F700F9BDBF /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2202314E5F500F9BDBF /* String+Common.swift */; };
-		C165E22C2314E5F700F9BDBF /* UIViewController+Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2212314E5F500F9BDBF /* UIViewController+Function.swift */; };
-		C165E22D2314E5F700F9BDBF /* UIImage+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2222314E5F600F9BDBF /* UIImage+Hys.swift */; };
-		C165E22E2314E5F700F9BDBF /* UIScreen+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2232314E5F600F9BDBF /* UIScreen+Hys.swift */; };
-		C165E22F2314E5F700F9BDBF /* UITextField+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2242314E5F600F9BDBF /* UITextField+Hys.swift */; };
-		C165E2302314E5F700F9BDBF /* UIButton+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2252314E5F600F9BDBF /* UIButton+Hys.swift */; };
-		C165E2312314E5F700F9BDBF /* Date+HYS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2262314E5F600F9BDBF /* Date+HYS.swift */; };
-		C165E2322314E5F700F9BDBF /* UIDevice+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2272314E5F700F9BDBF /* UIDevice+Hys.swift */; };
-		C165E2332314E5F700F9BDBF /* UIView+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2282314E5F700F9BDBF /* UIView+Hys.swift */; };
-		C165E2342314E5F700F9BDBF /* FileManager+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2292314E5F700F9BDBF /* FileManager+Hys.swift */; };
+		C165E2412315105000F9BDBF /* UIImage+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2362315104F00F9BDBF /* UIImage+Hys.swift */; };
+		C165E2422315105000F9BDBF /* UILabel+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2372315104F00F9BDBF /* UILabel+Hys.swift */; };
+		C165E2432315105000F9BDBF /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2382315104F00F9BDBF /* String+Common.swift */; };
+		C165E2442315105000F9BDBF /* Date+HYS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2392315104F00F9BDBF /* Date+HYS.swift */; };
+		C165E2452315105000F9BDBF /* FileManager+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E23A2315104F00F9BDBF /* FileManager+Hys.swift */; };
+		C165E2462315105000F9BDBF /* UIViewController+Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E23B2315104F00F9BDBF /* UIViewController+Function.swift */; };
+		C165E2472315105000F9BDBF /* UITextField+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E23C2315104F00F9BDBF /* UITextField+Hys.swift */; };
+		C165E2482315105000F9BDBF /* UIScreen+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E23D2315104F00F9BDBF /* UIScreen+Hys.swift */; };
+		C165E2492315105000F9BDBF /* UIButton+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E23E2315104F00F9BDBF /* UIButton+Hys.swift */; };
+		C165E24A2315105000F9BDBF /* UIDevice+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E23F2315104F00F9BDBF /* UIDevice+Hys.swift */; };
+		C165E24B2315105000F9BDBF /* UIView+Hys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C165E2402315104F00F9BDBF /* UIView+Hys.swift */; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = D3067EAFD5B0A06885968D137840DB70 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = E354F8FD537351F26F7949B4EBFA5101 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D9FFDF32AB63552F8D663DC6DD0A93C3 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69452393A8C963A189E10F689A92BA75 /* ReplaceMe.swift */; };
@@ -122,17 +122,17 @@
 		B1F523E59DB6ABA637E2713BC46F4100 /* Pods-WGProjectConfig_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WGProjectConfig_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B7CE78E515A535DB18CC6219FD35C4EA /* Pods-WGProjectConfig_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WGProjectConfig_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B89E0B7B185644EF1D8EEB3504AC2D80 /* WGProjectConfig-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WGProjectConfig-dummy.m"; sourceTree = "<group>"; };
-		C165E21F2314E5F400F9BDBF /* UILabel+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Hys.swift"; sourceTree = "<group>"; };
-		C165E2202314E5F500F9BDBF /* String+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
-		C165E2212314E5F500F9BDBF /* UIViewController+Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Function.swift"; sourceTree = "<group>"; };
-		C165E2222314E5F600F9BDBF /* UIImage+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Hys.swift"; sourceTree = "<group>"; };
-		C165E2232314E5F600F9BDBF /* UIScreen+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Hys.swift"; sourceTree = "<group>"; };
-		C165E2242314E5F600F9BDBF /* UITextField+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Hys.swift"; sourceTree = "<group>"; };
-		C165E2252314E5F600F9BDBF /* UIButton+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Hys.swift"; sourceTree = "<group>"; };
-		C165E2262314E5F600F9BDBF /* Date+HYS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+HYS.swift"; sourceTree = "<group>"; };
-		C165E2272314E5F700F9BDBF /* UIDevice+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Hys.swift"; sourceTree = "<group>"; };
-		C165E2282314E5F700F9BDBF /* UIView+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Hys.swift"; sourceTree = "<group>"; };
-		C165E2292314E5F700F9BDBF /* FileManager+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Hys.swift"; sourceTree = "<group>"; };
+		C165E2362315104F00F9BDBF /* UIImage+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Hys.swift"; sourceTree = "<group>"; };
+		C165E2372315104F00F9BDBF /* UILabel+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Hys.swift"; sourceTree = "<group>"; };
+		C165E2382315104F00F9BDBF /* String+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
+		C165E2392315104F00F9BDBF /* Date+HYS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+HYS.swift"; sourceTree = "<group>"; };
+		C165E23A2315104F00F9BDBF /* FileManager+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Hys.swift"; sourceTree = "<group>"; };
+		C165E23B2315104F00F9BDBF /* UIViewController+Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Function.swift"; sourceTree = "<group>"; };
+		C165E23C2315104F00F9BDBF /* UITextField+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Hys.swift"; sourceTree = "<group>"; };
+		C165E23D2315104F00F9BDBF /* UIScreen+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Hys.swift"; sourceTree = "<group>"; };
+		C165E23E2315104F00F9BDBF /* UIButton+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Hys.swift"; sourceTree = "<group>"; };
+		C165E23F2315104F00F9BDBF /* UIDevice+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Hys.swift"; sourceTree = "<group>"; };
+		C165E2402315104F00F9BDBF /* UIView+Hys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Hys.swift"; sourceTree = "<group>"; };
 		C477A9079A55A5AF8B624CC7C02A7C64 /* Pods-WGProjectConfig_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WGProjectConfig_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD79604FC150D0647DB2864B18731DE3 /* Pods-WGProjectConfig_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WGProjectConfig_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D3067EAFD5B0A06885968D137840DB70 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 		0B379A941A31CFE084B1A77A348975A5 /* WGProjectConfig */ = {
 			isa = PBXGroup;
 			children = (
-				C165E21E2314E55500F9BDBF /* Extension */,
+				C165E2352315104F00F9BDBF /* Extension */,
 				69452393A8C963A189E10F689A92BA75 /* ReplaceMe.swift */,
 				B77CFB8C64F4C91F6E875CD15D997A4E /* Pod */,
 				E098096997897DDD6E9CF5DC23ACF3FC /* Support Files */,
@@ -325,22 +325,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C165E21E2314E55500F9BDBF /* Extension */ = {
+		C165E2352315104F00F9BDBF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C165E2262314E5F600F9BDBF /* Date+HYS.swift */,
-				C165E2292314E5F700F9BDBF /* FileManager+Hys.swift */,
-				C165E2202314E5F500F9BDBF /* String+Common.swift */,
-				C165E2252314E5F600F9BDBF /* UIButton+Hys.swift */,
-				C165E2272314E5F700F9BDBF /* UIDevice+Hys.swift */,
-				C165E2222314E5F600F9BDBF /* UIImage+Hys.swift */,
-				C165E21F2314E5F400F9BDBF /* UILabel+Hys.swift */,
-				C165E2232314E5F600F9BDBF /* UIScreen+Hys.swift */,
-				C165E2242314E5F600F9BDBF /* UITextField+Hys.swift */,
-				C165E2282314E5F700F9BDBF /* UIView+Hys.swift */,
-				C165E2212314E5F500F9BDBF /* UIViewController+Function.swift */,
+				C165E2362315104F00F9BDBF /* UIImage+Hys.swift */,
+				C165E2372315104F00F9BDBF /* UILabel+Hys.swift */,
+				C165E2382315104F00F9BDBF /* String+Common.swift */,
+				C165E2392315104F00F9BDBF /* Date+HYS.swift */,
+				C165E23A2315104F00F9BDBF /* FileManager+Hys.swift */,
+				C165E23B2315104F00F9BDBF /* UIViewController+Function.swift */,
+				C165E23C2315104F00F9BDBF /* UITextField+Hys.swift */,
+				C165E23D2315104F00F9BDBF /* UIScreen+Hys.swift */,
+				C165E23E2315104F00F9BDBF /* UIButton+Hys.swift */,
+				C165E23F2315104F00F9BDBF /* UIDevice+Hys.swift */,
+				C165E2402315104F00F9BDBF /* UIView+Hys.swift */,
 			);
-			path = Extension;
+			name = Extension;
+			path = WGProjectConfig/Classes/Extension;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -596,26 +597,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C165E22E2314E5F700F9BDBF /* UIScreen+Hys.swift in Sources */,
+				C165E2412315105000F9BDBF /* UIImage+Hys.swift in Sources */,
+				C165E2432315105000F9BDBF /* String+Common.swift in Sources */,
 				6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */,
 				8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */,
+				C165E2452315105000F9BDBF /* FileManager+Hys.swift in Sources */,
 				E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */,
+				C165E2472315105000F9BDBF /* UITextField+Hys.swift in Sources */,
 				88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */,
-				C165E22D2314E5F700F9BDBF /* UIImage+Hys.swift in Sources */,
-				C165E2302314E5F700F9BDBF /* UIButton+Hys.swift in Sources */,
-				C165E22C2314E5F700F9BDBF /* UIViewController+Function.swift in Sources */,
-				C165E2322314E5F700F9BDBF /* UIDevice+Hys.swift in Sources */,
+				C165E2482315105000F9BDBF /* UIScreen+Hys.swift in Sources */,
+				C165E2462315105000F9BDBF /* UIViewController+Function.swift in Sources */,
+				C165E2442315105000F9BDBF /* Date+HYS.swift in Sources */,
+				C165E24A2315105000F9BDBF /* UIDevice+Hys.swift in Sources */,
 				9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */,
-				C165E2342314E5F700F9BDBF /* FileManager+Hys.swift in Sources */,
 				11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */,
-				C165E22B2314E5F700F9BDBF /* String+Common.swift in Sources */,
-				C165E2312314E5F700F9BDBF /* Date+HYS.swift in Sources */,
 				2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */,
-				C165E22F2314E5F700F9BDBF /* UITextField+Hys.swift in Sources */,
-				C165E2332314E5F700F9BDBF /* UIView+Hys.swift in Sources */,
+				C165E24B2315105000F9BDBF /* UIView+Hys.swift in Sources */,
 				14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */,
+				C165E2422315105000F9BDBF /* UILabel+Hys.swift in Sources */,
+				C165E2492315105000F9BDBF /* UIButton+Hys.swift in Sources */,
 				A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */,
-				C165E22A2314E5F700F9BDBF /* UILabel+Hys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
