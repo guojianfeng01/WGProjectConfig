@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		0851E9ACB4414A0AF7110C4F /* Pods_WGProjectConfig_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WGProjectConfig_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		371C52A2C1566B1191A2D841 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		40D7ED61FFE6C344C70258CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		371C52A2C1566B1191A2D841 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		40D7ED61FFE6C344C70258CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4CF4D5741970D40BEDBAC7C7 /* Pods-WGProjectConfig_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGProjectConfig_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WGProjectConfig_Tests/Pods-WGProjectConfig_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4ECBEB7BA2F77E6A00FD2A8F /* Pods-WGProjectConfig_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGProjectConfig_Example.debug.xcconfig"; path = "Target Support Files/Pods-WGProjectConfig_Example/Pods-WGProjectConfig_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5F090B88DA916AB1591A8CA6 /* Pods_WGProjectConfig_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WGProjectConfig_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +46,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		EF0BC83450014F2BAF5AD12C /* Pods-WGProjectConfig_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGProjectConfig_Tests.release.xcconfig"; path = "Target Support Files/Pods-WGProjectConfig_Tests/Pods-WGProjectConfig_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F319189F5A337CE1D6101AD8 /* Pods-WGProjectConfig_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGProjectConfig_Example.release.xcconfig"; path = "Target Support Files/Pods-WGProjectConfig_Example/Pods-WGProjectConfig_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FA81EEE55CEC1B989DCAAB83 /* WGProjectConfig.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WGProjectConfig.podspec; path = ../WGProjectConfig.podspec; sourceTree = "<group>"; };
+		FA81EEE55CEC1B989DCAAB83 /* WGProjectConfig.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WGProjectConfig.podspec; path = ../WGProjectConfig.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				4CF4D5741970D40BEDBAC7C7 /* Pods-WGProjectConfig_Tests.debug.xcconfig */,
 				EF0BC83450014F2BAF5AD12C /* Pods-WGProjectConfig_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
