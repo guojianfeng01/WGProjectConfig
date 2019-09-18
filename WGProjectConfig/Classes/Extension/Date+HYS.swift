@@ -37,6 +37,7 @@ public extension Date{
         }
     }
     
+    ///时分秒
     func getHHMMSSFormSS(seconds:Int) -> String {
         let str_hour = NSString(format: "%02ld", seconds/3600)
         let str_minute = NSString(format: "%02ld", (seconds%3600)/60)

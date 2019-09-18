@@ -150,7 +150,16 @@ public extension UILabel{
         return la
     }
     
-    //设置文字阴影
+    /// 特定文字颜色和文字阴影
+    ///
+    /// - Parameters:
+    ///   - mainFont: mainFont
+    ///   - mainColor: mainColor
+    ///   - range: range（需要设置文字范围）
+    ///   - titleFont: titleFont（需要设置文字字体）
+    ///   - color: color（需要设置文字颜色）
+    ///   - lineSpace: lineSpace（两行之间的间距）
+    ///   - shadowColor: shadowColor（需要设置文字阴影）
     func label(withMainFont mainFont: UIFont, mainColor: UIColor, range: NSRange, font titleFont: UIFont, color: UIColor, lineSpace: CGFloat,shadowColor:UIColor) {
         font = mainFont
         textColor = mainColor

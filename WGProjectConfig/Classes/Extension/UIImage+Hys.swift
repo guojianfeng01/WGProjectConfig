@@ -9,8 +9,13 @@
 import Foundation
 
 extension UIImage{
-    class func imageWithColor(color:UIColor,size:CGSize) -> UIImage
-    {
+    /// get image with color （获得纯色图片）
+    ///
+    /// - Parameters:
+    ///   - color: image color
+    ///   - size: image size
+    /// - Returns: return image
+    open class func imageWithColor(color:UIColor,size:CGSize) -> UIImage{
         let rect = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
         UIGraphicsBeginImageContext(rect.size)
         let context:CGContext = UIGraphicsGetCurrentContext()!
@@ -21,7 +26,14 @@ extension UIImage{
         return image!
     }
     
-    func imageAddCorner(withRadius radius: CGFloat, andSize size: CGSize) -> UIImage! {
+  
+    /// get image with corner (获得圆角图片)
+    ///
+    /// - Parameters:
+    ///   - radius: image radius
+    ///   - size: image size
+    /// - Returns: image
+    open func imageAddCorner(withRadius radius: CGFloat, andSize size: CGSize) -> UIImage! {
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         let ctx = UIGraphicsGetCurrentContext()

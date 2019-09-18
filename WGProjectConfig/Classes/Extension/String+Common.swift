@@ -80,13 +80,20 @@ public extension String {
     }
 }
 
-extension String{
+public extension String{
+    /// 获取文字的size
+    ///
+    /// - Parameter font: font
+    /// - Returns: CGSize
     func size(_ font: CGFloat) -> CGSize {
         let str = self as NSString
         return str.size(withAttributes: [NSAttributedString.Key.font : font])
     }
     
     
+    /// 是否为空格，或者为空
+    ///
+    /// - Returns: Bool
     func xnStringAllIsEmpty() -> Bool {
         if self.isEmpty{
             return true
@@ -100,7 +107,9 @@ extension String{
         }
     }
     
-    //q去掉html标签
+    /// q去掉html标签
+    ///
+    /// - Returns: 不含html标签的string
     func getNoHoveHtmlString() -> String{
         if self.isEmpty {
             return ""
@@ -109,39 +118,6 @@ extension String{
         return attributedString.string
     }
     
-
-    func getTextHeigh(textStr:String,font:UIFont,width:CGFloat) -> CGFloat {
-        let normalText = textStr as NSString
-        let size = CGSize(width: width, height: 10000)
-        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font : font], context: nil)
-        return stringSize.height
-    }
-    
-    func getTextRow(textStr:String,font:UIFont,width:CGFloat) -> CGFloat {
-        let desHeight = getTextHeigh(textStr: textStr, font: font, width: width)
-        let oneHeight =  getTextHeigh(textStr: "你好", font: font, width: width)
-        let row = desHeight / oneHeight
-        return row
-    }
-    
-    func getTextWidth(textStr:String,font:UIFont) -> CGFloat {
-        let normalText = textStr as NSString
-        let size = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
-        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font : font], context: nil)
-        return stringSize.width
-    }
-    
-    
-    static func formatSecondsToString(_ secounds: TimeInterval) -> String {
-        if secounds.isNaN {
-            return "00:00"
-        }
-        let Min = Int(secounds / 60)
-        let Sec = Int(secounds.truncatingRemainder(dividingBy: 60))
-        return String(format: "%02d:%02d", Min, Sec)
-    }
-
-    
     //使用正则表达式替换
     func pregReplace(pattern: String, with: String, options: NSRegularExpression.Options = []) -> String {
         let regex = try! NSRegularExpression(pattern: pattern, options: options)
@@ -149,9 +125,42 @@ extension String{
     }
     
     //正则表达式替换字符串中html标签
-    
     func htmlPregReplace() -> String{
-       return self.pregReplace(pattern: "<[^>]*>", with: "")
+        return self.pregReplace(pattern: "<[^>]*>", with: "")
+    }
+
+    /// 获得文字高度
+    static func getTextHeigh(textStr:String,font:UIFont,width:CGFloat) -> CGFloat {
+        let normalText = textStr as NSString
+        let size = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
+        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font : font], context: nil)
+        return stringSize.height
+    }
+    
+    /// 获得文字行数
+    static func getTextRow(textStr:String,font:UIFont,width:CGFloat) -> CGFloat {
+        let desHeight = getTextHeigh(textStr: textStr, font: font, width: width)
+        let oneHeight =  getTextHeigh(textStr: "你好", font: font, width: width)
+        let row = desHeight / oneHeight
+        return row
+    }
+    
+    /// 获得文字宽度
+    static func getTextWidth(textStr:String,font:UIFont) -> CGFloat {
+        let normalText = textStr as NSString
+        let size = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
+        let stringSize = normalText.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font : font], context: nil)
+        return stringSize.width
+    }
+    
+    //获取时分秒
+    static func formatSecondsToString(_ secounds: TimeInterval) -> String {
+        if secounds.isNaN {
+            return "00:00"
+        }
+        let Min = Int(secounds / 60)
+        let Sec = Int(secounds.truncatingRemainder(dividingBy: 60))
+        return String(format: "%02d:%02d", Min, Sec)
     }
 }
 
