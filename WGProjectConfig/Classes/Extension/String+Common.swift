@@ -31,8 +31,6 @@ public extension String {
         return cgFloat
     }
     
- 
-    
     var url: URL? {
         if self.hasPrefix("http") {
             return URL(string: self)
@@ -54,6 +52,7 @@ public extension String {
         free(buffer)
         return md5String as String
     }
+     
 //     随机字符串， length 生成随机字符串的长度
     static func random(length: Int) -> String {
         let charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
