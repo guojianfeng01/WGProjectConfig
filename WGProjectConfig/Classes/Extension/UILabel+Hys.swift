@@ -196,27 +196,12 @@ public extension UILabel{
     
     /// 改变行间距
     func changeLineSpace(space: Float) {
-        guard let labelText = self.text else {
-            return
-        }
-        let attributedString = NSMutableAttributedString(string: labelText)
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = CGFloat(space)
-        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: labelText.length))
-        self.attributedText = attributedString
-        self.sizeToFit()
+        self.changeSpace(lineSpace: space, wordSpace: 0)
     }
     
     /// 改变字间距
     func changeWordSpace(space: Float) {
-        guard let labelText = self.text else {
-            return
-        }
-        let attributedString = NSMutableAttributedString(string: labelText, attributes: [NSAttributedString.Key.kern: space])
-        let paragraphStyle = NSMutableParagraphStyle()
-        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSRange(location: 0, length: labelText.count))
-        self.attributedText = attributedString
-        self.sizeToFit()
+        self.changeSpace(lineSpace: 0, wordSpace: space)
     }
     
     /// 改变行间距和字间距
