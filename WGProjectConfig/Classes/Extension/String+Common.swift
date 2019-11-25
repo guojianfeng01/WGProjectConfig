@@ -40,7 +40,8 @@ public extension String {
             return URL(string: string)
         }
     }
-//    字符串转MD5
+    
+    //    字符串转MD5
     var md5: String {
         let cStr = cString(using: String.Encoding.utf8);
         let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: 16)
@@ -52,11 +53,11 @@ public extension String {
         free(buffer)
         return md5String as String
     }
-     
-//     随机字符串， length 生成随机字符串的长度
+    
+    //     随机字符串， length 生成随机字符串的长度
     static func random(length: Int) -> String {
         let charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-        var c = charSet.map { String($0) }
+        let c = charSet.map { String($0) }
         var s:String = ""
         for _ in (1...length) {
             let intC =  UInt64(arc4random()) % UInt64(c.count)
@@ -67,12 +68,13 @@ public extension String {
         }
         return s
     }
-//    字符串sha1
+    
+    //    字符串sha1
     var sha1: String {
         let data = self.data(using: String.Encoding.utf8)!
         var digest = [UInt8](repeating: 0, count:Int(CC_SHA1_DIGEST_LENGTH))
-        data.withUnsafeBytes {
-            _ = CC_SHA1($0, CC_LONG(data.count), &digest)
+        data.withUnsafeBytes { ptr in
+            CC_SHA1(ptr, CC_LONG(data.count), &digest)
         }
         let hexBytes = digest.map { String(format: "%02hhx", $0) }
         return hexBytes.joined()
@@ -88,7 +90,6 @@ public extension String{
         let str = self as NSString
         return str.size(withAttributes: [NSAttributedString.Key.font : font])
     }
-    
     
     /// 是否为空格，或者为空
     ///
@@ -127,7 +128,7 @@ public extension String{
     func htmlPregReplace() -> String{
         return self.pregReplace(pattern: "<[^>]*>", with: "")
     }
-
+    
     /// 获得文字高度
     static func getTextHeigh(textStr:String,font:UIFont,width:CGFloat) -> CGFloat {
         let normalText = textStr as NSString

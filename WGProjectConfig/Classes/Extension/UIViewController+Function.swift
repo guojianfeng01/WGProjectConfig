@@ -9,31 +9,30 @@
 import UIKit
 
 extension UIViewController {
-//
-//    //MARK:- 添加nav右边文字按钮
-//    @discardableResult
-//    func setRightTitle(_ title : String) -> ControlEvent<Void>? {
-//        if (title.length == 0) {
-//            navigationItem.rightBarButtonItem = nil
-//            return nil
-//        }
-//        else {
-//            let item = UIBarButtonItem(title: title, style: .done, target: nil, action: nil)
-//            navigationItem.setRightBarButton(item, animated: false)
-//            item.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.textThemeColor, NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15)], for: .normal)
-//            return item.rx.tap
-//        }
-//    }
-//
-////
-////    // MARK: - Method Swizzling
-////
-////    func nsh_viewWillAppear(animated: Bool) {
-////        self.nsh_viewWillAppear(animated: animated)
-////
-////        print("\n\nnsh_viewWillAppear: \(description)\n\n")
-////    }
-////
+    
+  public  static func initializeMethod(){
+        let originalSelector = #selector(UIViewController.viewWillAppear(_:))
+        let swizzledSelector = #selector(UIViewController.nsh_viewWillAppear(animated:))
+        
+        let originalMethod = class_getInstanceMethod(self, originalSelector)
+        let swizzledMethod = class_getInstanceMethod(self, swizzledSelector)
+        
+        let didAddMethod: Bool = class_addMethod(self, originalSelector, method_getImplementation(swizzledMethod!), method_getTypeEncoding(swizzledMethod!))
+        
+        if didAddMethod {
+            class_replaceMethod(self, swizzledSelector, method_getImplementation(originalMethod!), method_getTypeEncoding(originalMethod!))
+        }else{
+            method_exchangeImplementations(originalMethod!, swizzledMethod!)
+        }
+    }
+
+    // MARK: - Method Swizzling
+    @objc func nsh_viewWillAppear(animated: Bool) {
+        self.nsh_viewWillAppear(animated: animated)
+
+        print("\n\nnsh_viewWillAppear: \(description)\n\n")
+    }
+
 }
 
 //public extension Reactive where Base: UIViewController {

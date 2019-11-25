@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		AFF5C054238BC15A00DEF2F2 /* WDGTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF5C053238BC15A00DEF2F2 /* WDGTestController.swift */; };
 		E20FBCE05F1664C278C75F78 /* Pods_WGProjectConfig_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0851E9ACB4414A0AF7110C4F /* Pods_WGProjectConfig_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		607FACE51AFB9204008FA782 /* WGProjectConfig_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGProjectConfig_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		AFF5C053238BC15A00DEF2F2 /* WDGTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WDGTestController.swift; path = ../../WDGTestController.swift; sourceTree = "<group>"; };
 		EF0BC83450014F2BAF5AD12C /* Pods-WGProjectConfig_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGProjectConfig_Tests.release.xcconfig"; path = "Target Support Files/Pods-WGProjectConfig_Tests/Pods-WGProjectConfig_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F319189F5A337CE1D6101AD8 /* Pods-WGProjectConfig_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WGProjectConfig_Example.release.xcconfig"; path = "Target Support Files/Pods-WGProjectConfig_Example/Pods-WGProjectConfig_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FA81EEE55CEC1B989DCAAB83 /* WGProjectConfig.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WGProjectConfig.podspec; path = ../WGProjectConfig.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -95,6 +97,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				AFF5C053238BC15A00DEF2F2 /* WDGTestController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -352,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				AFF5C054238BC15A00DEF2F2 /* WDGTestController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

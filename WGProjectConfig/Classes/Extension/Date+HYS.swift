@@ -27,6 +27,23 @@ public extension Date{
         return "\(component)"
     }
     
+    ///获得当前日字符串,get current Month string
+      func currentDay() -> String{
+          let currentDate = Date()
+          let calender = Calendar.current
+          let component = calender.component(Calendar.Component.day, from: currentDate)
+          return "\(component)"
+      }
+      
+      ///时分秒
+      func getHHMMSSFormSS(seconds:Int) -> String {
+          let str_hour = NSString(format: "%02ld", seconds/3600)
+          let str_minute = NSString(format: "%02ld", (seconds%3600)/60)
+          let str_second = NSString(format: "%02ld", seconds%60)
+          let format_time = NSString(format: "%@:%@:%@",str_hour,str_minute,str_second)
+          return format_time as String
+      }
+    
     /// <#endTime#> distance now to future, 到未来某个时间的时间差
     func deltaFrom(endTime: Int) -> String {
         if TimeInterval(endTime) > Date().timeIntervalSince1970{
@@ -35,14 +52,5 @@ public extension Date{
         }else{
             return "00:00:00"
         }
-    }
-    
-    ///时分秒
-    func getHHMMSSFormSS(seconds:Int) -> String {
-        let str_hour = NSString(format: "%02ld", seconds/3600)
-        let str_minute = NSString(format: "%02ld", (seconds%3600)/60)
-        let str_second = NSString(format: "%02ld", seconds%60)
-        let format_time = NSString(format: "%@:%@:%@",str_hour,str_minute,str_second)
-        return format_time as String
     }
 }
