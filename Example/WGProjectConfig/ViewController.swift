@@ -13,6 +13,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let testButton = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        testButton.backgroundColor = UIColor.red
+        view.addSubview(testButton)
+        testButton.addTarget(self, action: #selector(textButtonAction), for: UIControl.Event.touchUpInside)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -21,5 +25,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @objc func textButtonAction(){
+        let vc = WDGTestController()
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 

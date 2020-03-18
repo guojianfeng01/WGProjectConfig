@@ -11,6 +11,8 @@ import UIKit
 extension UIViewController {
     
   public  static func initializeMethod(){
+    
+    
         let originalSelector = #selector(UIViewController.viewWillAppear(_:))
         let swizzledSelector = #selector(UIViewController.nsh_viewWillAppear(animated:))
         
@@ -30,7 +32,7 @@ extension UIViewController {
     @objc func nsh_viewWillAppear(animated: Bool) {
         self.nsh_viewWillAppear(animated: animated)
 
-        print("\n\nnsh_viewWillAppear: \(description)\n\n")
+         print("\n\nnsh_viewWillAppear: \(description)\n\n")
     }
 
 }
